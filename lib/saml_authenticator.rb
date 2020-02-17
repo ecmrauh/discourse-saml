@@ -146,6 +146,10 @@ class SamlAuthenticator < ::Auth::OAuth2Authenticator
     result.extra_data[:saml_attributes] = attributes
     result.extra_data[:saml_info] = info
 
+    # Remove eIdentifier from email field. For the username field, this is
+    # achieved via `DISCOURSE_SAML_CLEAR_USERNAME: true` in app.yml.
+    result.email = ''
+
     if result.user.blank?
       result.username = '' if GlobalSetting.try(:saml_clear_username)
       result.omit_username = true if GlobalSetting.try(:saml_omit_username)
