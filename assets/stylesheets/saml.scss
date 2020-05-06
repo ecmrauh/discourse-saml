@@ -6,6 +6,8 @@
   font-size: 1.15em !important;
   padding-left: 40px;
   padding-top: 8px;
+  // Chrome needs a little bit more padding top to vertically center the label.
+  -webkit-padding-before: 12px;
   padding-bottom: 10px;
   .d-icon {
     display: none;
