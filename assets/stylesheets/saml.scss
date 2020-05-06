@@ -1,6 +1,8 @@
 .btn-social.saml {
   background: #283479;
-  // .d-icon {
-    // display: none;
-  // }
+  background-image:url("/plugins/discourse-saml/images/eidas-logo-24px.png");
+  background-repeat: no-repeat;
+  .d-icon {
+    display: none;
+  }
 }
