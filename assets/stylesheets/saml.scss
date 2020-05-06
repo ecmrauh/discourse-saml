@@ -1,7 +1,9 @@
-.btn-social.saml {
+.btn-social.saml, .btn-social.saml:hover {
   background: #283479;
   background-image:url("/plugins/discourse-saml/images/eidas-logo-24px.png");
   background-repeat: no-repeat;
+  background-position-y: center;
+  padding-left: 35px;
   .d-icon {
     display: none;
   }
