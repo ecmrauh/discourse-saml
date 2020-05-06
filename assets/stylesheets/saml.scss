@@ -1,10 +1,15 @@
 .btn-social.saml, .btn-social.saml:hover {
   background: #283479;
-  background-image:url("/plugins/discourse-saml/images/eidas-logo-24px.png");
+  background-image:url("/plugins/discourse-saml/images/eidas-logo.png");
   background-repeat: no-repeat;
   background-position-y: center;
+  font-size: 1.15em !important;
   padding-left: 35px;
   .d-icon {
     display: none;
   }
+}
+
+.login-modal #login-buttons:not(.hidden) button, .create-account #login-buttons:not(.hidden) button {
+    align-items: normal !important;
 }
